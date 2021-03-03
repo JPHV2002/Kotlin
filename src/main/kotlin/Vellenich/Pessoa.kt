@@ -8,10 +8,12 @@ class Pessoa {
     var idade = 18
         private set
 
-    inner class Endereco{
+    inner class Endereco {
         var rua = "rua"
         var numero = 412
     }
+
+    fun nomeIdade() = "$nome e $idade"
 
 }
 
@@ -23,4 +25,6 @@ fun main(){
     println(joao.idade)
     println(joao.nome)
     println(joao.Endereco().numero)
+
+    println(joao.nomeIdade())
 }
